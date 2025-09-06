@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ananda International School</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo/Anadha school Logo.jpg"
+                    alt="Ananda International School Logo" /></a>
+        </div>
+
+        <!-- Hamburger -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu" aria-expanded="false"
+            aria-controls="navLinks">
+            &#9776;
+        </button>
+
+        <!-- Drawer (UL) -->
+        <ul class="nav-links" id="navLinks" role="navigation" aria-label="Main">
+            <!-- Sidebar logo (visible when drawer opens on mobile) -->
+            <li class="sidebar-logo">
+                <img src="assets/logo/Anadha school Logo.jpg" alt="Ananda International School Logo" />
+            </li>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Life at Anandha</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Disclosure</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Overlay for drawer -->
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+
+    <main id="main">
+
+        <!-- Page title -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contact Ananda International School</h1>
+                <p class="kicker">We’re here to help with admissions, academics, and general enquiries.</p>
+            </div>
+        </section>
+
+        <!-- Address + Map side by side -->
+        <section class="contact-info-map">
+            <div class="container two-col">
+                <!-- Address -->
+                <div class="info-card">
+                    <h2>Our Address</h2>
+                    <p class="contact-item">
+                        <img src="assets/icons/location.svg" alt="Location" class="contact-icon">
+                        R.Pattanam, Rasipuram, Tamil Nadu 637408
+                    </p>
+                    <p class="contact-item">
+                        <img src="assets/icons/phone.svg" alt="Phone" class="contact-icon">
+                        <a href="tel:+919788478032">+91 97884 78032 </a> &nbsp;|&nbsp; <a href="tel:+919629450364"> +91
+                            96294 50364</a>
+                    </p>
+                    <p class="contact-item">
+                        <img src="assets/icons/mail.svg" alt="Email" class="contact-icon">
+                        <a href="mailto:info@anandainternationalschool.com">info@anandainternationalschool.com</a>
+                    </p>
+                    <p class="contact-item">
+                        <strong>School Hours:</strong> Mon–Fri, 8:30 AM – 4:30 PM
+                    </p>
+                </div>
+
+                <!-- Map -->
+                <div class="map-card">
+                    <h2>Find Us on Google Maps</h2>
+                    <div class="map-embed">
+                        <iframe title="Ananda International School Location" loading="lazy"
+                            src="
+                            https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4057.884042105539!2d78.21114879999999!3d11.463169599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babc17e7f9511d3%3A0x1a61a049b277661a!2zQW5hbmRhIFZpZGh5YWxheWEgTWF0cmljLiBIci4gU2VjLiBTY2hvb2wg4K6G4K6p4K6o4K-N4K6k4K6-IOCuteCuv-CupOCvjeCur-CuvuCusuCur-CuviDgrq7gr4bgrp_gr43grrDgrr_grpXgr40g4K6u4K-H4K6y4K-N4K6o4K6_4K6y4K-I4K6q4K-NIOCuquCus-CvjeCus-Cuvw!5e1!3m2!1sen!2suk!4v1757176509723!5m2!1sen!2suk">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form in middle -->
+        <section class="contact-form-section">
+            <div class="container">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm" action="#" method="post" class="contact-form">
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-field">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-field form-field--full">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn--primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <!-- Column 1: Logo -->
+            <div class="footer-col">
+                <img src="assets/logo/Anadha school Logo.jpg" alt="Ananda International School Logo"
+                    class="footer-logo">
+                <p>
+                    Ananda International School – nurturing <strong>future-ready learners</strong> through
+                    <em>academic excellence, values, and holistic growth</em>.
+                </p>
+            </div>
+
+            <!-- Column 2: Useful Links -->
+            <div class="footer-col">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Contact -->
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>📍 R.Pattanam, Rasipuram, Tamil Nadu 637 408</p>
+                <p>📞 <a href="tel:+919788478032">+91 97884 78032</a> | <a href="tel:+919629450364">+91 96294 50364</a>
+                </p>
+                <p class="contact-item">
+                    <img src="assets/icons/mail.svg" alt="Email" class="contact-icon"><a href="#">abc@gmail.com</a>
+                </p>
+                <div class="socials">
+                    <a href="https://youtube.com/@anandavidyalayaeducationalinst?si=ozFYVKlZiv9ln0UU"><img
+                            src="assets/icons/youtube.svg" alt="youtube"></a>
+                    <a href="https://www.facebook.com/people/Ananda-Educational-Institutions/61564529486074/#"><img
+                            src="assets/icons/facebook.svg" alt="Facebook"></a>
+                    <a
+                        href="https://www.instagram.com/ananda_institutions?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                            src="assets/icons/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Ananda International School. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
