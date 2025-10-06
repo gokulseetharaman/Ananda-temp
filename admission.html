@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ananda Educational Institutions</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo/Anadha school Logo.jpg"
+                    alt="Ananda Educational Institutions Logo" /></a>
+        </div>
+
+        <!-- Hamburger -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu" aria-expanded="false"
+            aria-controls="navLinks">
+            &#9776;
+        </button>
+
+        <!-- Drawer (UL) -->
+        <ul class="nav-links" id="navLinks" role="navigation" aria-label="Main">
+            <!-- Sidebar logo (visible when drawer opens on mobile) -->
+            <li class="sidebar-logo">
+                <img src="assets/logo/Anadha school Logo.jpg" alt="Ananda Educational Institutions Logo" />
+            </li>
+
+       <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admission.html">Admissions</a></li>
+            <li><a href="life.html">Life at Anandha</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">Disclosure</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Overlay for drawer -->
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
+<main id="main">
+
+  <!-- Page Hero -->
+  <section class="ad-hero">
+    <div class="container">
+      <h1>Admissions</h1>
+      <p class="kicker">CBSE • Holistic Education • STEM & Robotics • Arts & Sports • Safe & Caring Campus</p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="ad-content">
+    <div class="container two-col">
+      <div>
+        <h2>Admissions Open 2025–26</h2>
+        <p>
+          We welcome applications from <strong>Nursery to Grade 8</strong> (Phase 1). At Ananda International School,
+          learning blends <em>strong academics, values, creativity, sports and wellbeing</em>—so children grow with
+          confidence and care.
+        </p>
+
+        <h3>Why Choose Ananda?</h3>
+        <ul class="ticks">
+          <li>CBSE curriculum & NEP-aligned pedagogy</li>
+          <li>STEM & Robotics labs, smart classrooms</li>
+          <li>Low student–teacher ratio & mentoring</li>
+          <li>Clubs, Olympiad prep, arts & sports</li>
+          <li>Safe campus, counseling, GPS transport</li>
+        </ul>
+
+        <h3>Documents Required</h3>
+        <ul class="dot-list">
+          <li>Birth Certificate (student)</li>
+          <li>Address proof (parent/guardian)</li>
+          <li>Student & Parent photographs</li>
+          <li>Previous report card / TC (if applicable)</li>
+          <li>Medical/Allergy note (if any)</li>
+        </ul>
+      </div>
+
+      <aside class="ad-info card">
+        <h3>Key Information</h3>
+        <ul class="info-list">
+          <li><strong>School Hours:</strong> Mon–Fri, 8:30 AM – 4:30 PM</li>
+          <li><strong>Location:</strong> R.Pattanam, Rasipuram, Tamil Nadu 637408</li>
+          <li><strong>Contact:</strong> <a href="tel:+919788478032">+91 97884 78032</a> / <a href="tel:+919629450364">+91 96294 50364</a></li>
+          <li><strong>Email:</strong> <a href="mailto:info@anandainternationalschool.com">info@anandainternationalschool.com</a></li>
+        </ul>
+        <p class="muted">Submit the form below. Our team will reach out with next steps.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Admission Form -->
+  <section class="ad-form">
+    <div class="container">
+      <h2>Application Form</h2>
+      <p class="sub">Please fill all fields marked with an asterisk (*).</p>
+
+      <form action="#" method="post" enctype="multipart/form-data" class="admission-form">
+
+        <!-- Student Details -->
+        <fieldset>
+          <legend>Student Details</legend>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="studentName">Full Name *</label>
+              <input type="text" id="studentName" name="studentName" required>
+            </div>
+            <div class="form-field">
+              <label for="dob">Date of Birth *</label>
+              <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-field">
+              <label for="gender">Gender *</label>
+              <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option>Female</option>
+                <option>Male</option>
+                <option>Non-binary / Prefer not to say</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="grade">Applying for Grade *</label>
+              <select id="grade" name="grade" required>
+                <option value="">Select</option>
+                <option>Nursery</option><option>LKG</option><option>UKG</option>
+                <option>Grade 1</option><option>Grade 2</option><option>Grade 3</option>
+                <option>Grade 4</option><option>Grade 5</option><option>Grade 6</option>
+                <option>Grade 7</option><option>Grade 8</option>
+              </select>
+            </div>
+            <div class="form-field form-field--full">
+              <label for="studentAddress">Residential Address *</label>
+              <textarea id="studentAddress" name="studentAddress" rows="3" required></textarea>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Parent / Guardian -->
+        <fieldset>
+          <legend>Parent / Guardian Details</legend>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="fatherName">Father / Guardian Name *</label>
+              <input type="text" id="fatherName" name="fatherName" required>
+            </div>
+            <div class="form-field">
+              <label for="fatherPhone">Phone *</label>
+              <input type="tel" id="fatherPhone" name="fatherPhone" required placeholder="+91…">
+            </div>
+            <div class="form-field">
+              <label for="fatherEmail">Email *</label>
+              <input type="email" id="fatherEmail" name="fatherEmail" required placeholder="name@example.com">
+            </div>
+            <div class="form-field">
+              <label for="motherName">Mother / Co-guardian Name *</label>
+              <input type="text" id="motherName" name="motherName" required>
+            </div>
+            <div class="form-field">
+              <label for="motherPhone">Co-guardian Phone *</label>
+              <input type="tel" id="motherPhone" name="motherPhone" required placeholder="+91…">
+            </div>
+            <div class="form-field">
+              <label for="parentAddress">Parent Address (if different)</label>
+              <input type="text" id="parentAddress" name="parentAddress">
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Transport & Medical -->
+        <fieldset>
+          <legend>Transport & Medical</legend>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="transport">Transport Required? *</label>
+              <select id="transport" name="transport" required>
+                <option value="">Select</option>
+                <option>Yes – School Bus</option>
+                <option>No – Self Drop/Pick</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="pickupLocation">Pickup / Area</label>
+              <input type="text" id="pickupLocation" name="pickupLocation" placeholder="e.g., R.Pattanam stop">
+            </div>
+            <div class="form-field">
+              <label for="medical">Medical Conditions / Allergies</label>
+              <input type="text" id="medical" name="medical" placeholder="If any">
+            </div>
+            <div class="form-field">
+              <label for="specialNeeds">Learning Needs / Support</label>
+              <input type="text" id="specialNeeds" name="specialNeeds" placeholder="If any">
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Uploads -->
+        <fieldset>
+          <legend>Document Uploads</legend>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="birthCert">Birth Certificate (PDF/JPG) *</label>
+              <input type="file" id="birthCert" name="birthCert" accept=".pdf,.jpg,.jpeg,.png" required>
+            </div>
+            <div class="form-field">
+              <label for="addressProof">Address Proof (PDF/JPG) *</label>
+              <input type="file" id="addressProof" name="addressProof" accept=".pdf,.jpg,.jpeg,.png" required>
+            </div>
+            <div class="form-field">
+              <label for="reportCard">Latest Report Card (PDF/JPG)</label>
+              <input type="file" id="reportCard" name="reportCard" accept=".pdf,.jpg,.jpeg,.png">
+            </div>
+            <div class="form-field">
+              <label for="photos">Student Photos (JPG/PNG)</label>
+              <input type="file" id="photos" name="photos" accept=".jpg,.jpeg,.png" multiple>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Declarations
+        <fieldset>
+          <legend>Declarations</legend>
+          <label class="check">
+            <input type="checkbox" required>
+            I confirm the information provided is true and I agree to the school’s <a href="#">Admission & Fee Policy</a>. *
+          </label>
+          <label class="check">
+            <input type="checkbox" required>
+            I consent to processing the applicant’s personal data for admission purposes. *
+          </label>
+        </fieldset> -->
+
+        <!-- Submit -->
+        <div class="form-actions">
+          <button type="submit" class="btn btn--primary">Submit Application</button>
+          <p class="privacy-note">You’ll receive an acknowledgement by email/SMS.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+
+    
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <!-- Column 1: Logo -->
+      <div class="footer-col">
+        <img src="assets/logo/Anadha school Logo.jpg" alt="Ananda Educational Institutions Logo" class="footer-logo">
+        <p>
+          Ananda Educational Institutions – nurturing <strong>future-ready learners</strong> through
+          <em>academic excellence, values, and holistic growth</em>.
+        </p>
+      </div>
+
+      <!-- Column 2: Useful Links -->
+      <div class="footer-col">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Contact -->
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p>📍 R.Pattanam, Rasipuram, Tamil Nadu 637 408</p>
+        <p>📞 <a href="tel:+919788478032">+91 97884 78032</a> | <a href="tel:+919629450364">+91 96294 50364</a></p>
+        <p class="contact-item">
+          <img src="assets/icons/mail.svg" alt="Email" class="contact-icon"><a href="#">abc@gmail.com</a>
+        </p> 
+        <div class="socials">
+          <a href="https://youtube.com/@anandavidyalayaeducationalinst?si=ozFYVKlZiv9ln0UU"><img src="assets/icons/youtube.svg" alt="youtube"></a>
+          <a href="https://www.facebook.com/people/Ananda-Educational-Institutions/61564529486074/#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+          <a href="https://www.instagram.com/ananda_institutions?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Ananda Educational Institutions. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ananda Educational Institutions</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo/Anadha school Logo.jpg"
+                    alt="Ananda Educational Institutions Logo" /></a>
+        </div>
+
+        <!-- Hamburger -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu" aria-expanded="false"
+            aria-controls="navLinks">
+            &#9776;
+        </button>
+
+        <!-- Drawer (UL) -->
+        <ul class="nav-links" id="navLinks" role="navigation" aria-label="Main">
+            <!-- Sidebar logo (visible when drawer opens on mobile) -->
+            <li class="sidebar-logo">
+                <img src="assets/logo/Anadha school Logo.jpg" alt="Ananda Educational Institutions Logo" />
+            </li>
+
+        <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admission.html">Admissions</a></li>
+            <li><a href="life.html">Life at Anandha</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">Disclosure</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Overlay for drawer -->
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+
+    <main id="main">
+
+        <!-- Page Hero -->
+        <section class="page-hero life-hero">
+            <div class="container">
+                <h1>Life at Ananda</h1>
+                <p class="kicker">Holistic CBSE schooling in Tamil Nadu — balanced academics, sports, arts, clubs,
+                    leadership & wellbeing.</p>
+                <div class="hero-cta">
+                    <a href="gallery.html" class="btn btn--primary">See Campus Life</a>
+                    <a href="admissions.html" class="btn btn--ghost">Join Ananda</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- A Day at a Glance -->
+        <section class="life-day">
+            <div class="container two-col">
+                <div>
+                    <h2>A Day at a Glance</h2>
+                    <ul class="timeline">
+                        <li>
+                            <time>8:30 AM</time>
+                            <div><strong>Assembly & Mindfulness</strong>
+                                <p>House updates, values talk, quick breathwork / yoga.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <time>9:00 AM</time>
+                            <div><strong>Core Subjects (CBSE)</strong>
+                                <p>Concept-driven English, Mathematics, Science, Languages.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <time>11:00 AM</time>
+                            <div><strong>Labs & Projects</strong>
+                                <p>STEM, Robotics, Computer Lab, hands-on experiments.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <time>12:30 PM</time>
+                            <div><strong>Lunch & Break</strong>
+                                <p>Healthy meals, peer time, library corner.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <time>1:15 PM</time>
+                            <div><strong>Clubs & Arts</strong>
+                                <p>Music, Fine Arts, Theatre, Public Speaking, Literary Club.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <time>2:30 PM</time>
+                            <div><strong>Sports & Fitness</strong>
+                                <p>Football, Athletics, Yoga, Indoor games, House practice.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <time>3:45 PM</time>
+                            <div><strong>Tutorials & Mentoring</strong>
+                                <p>Personalised support, enrichment, parent connect.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <aside class="life-facts card">
+                    <h3>Quick Facts</h3>
+                    <ul class="chip-list">
+                        <li>CBSE • NEP-aligned</li>
+                        <li>STEM & Robotics</li>
+                        <li>Clubs & Olympiads</li>
+                        <li>Sports & Yoga</li>
+                        <li>Safe Transport</li>
+                        <li>Counseling</li>
+                    </ul>
+                    <p class="muted">From Nursery to Grade 8 (Phase 1), we blend academic excellence with character,
+                        creativity, and care.</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Clubs & Activities -->
+        <section class="life-clubs">
+            <div class="container">
+                <h2>Clubs & Activities</h2>
+                <div class="card-grid-3">
+                    <article class="card">
+                        <h3>STEM & Robotics</h3>
+                        <ul class="dot-list">
+                            <li>Robotics, Coding, Design Thinking</li>
+                            <li>Science Club, Tinkering Lab</li>
+                            <li>Math Circle, Puzzle League</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Languages & Leadership</h3>
+                        <ul class="dot-list">
+                            <li>Literary Club, Debate, MUN</li>
+                            <li>Reading Program, Language Lab</li>
+                            <li>School Parliament, Prefectorial Board</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Arts & Wellness</h3>
+                        <ul class="dot-list">
+                            <li>Music, Fine Arts, Theatre</li>
+                            <li>Yoga & Mindfulness</li>
+                            <li>Eco Club & Community Service</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="center" style="margin-top:16px;">
+                    <a href="gallery.html" class="btn btn--ghost">Explore Photo Gallery</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sports & Facilities -->
+        <section class="life-sports">
+            <div class="container two-col">
+                <div>
+                    <h2>Sports & Facilities</h2>
+                    <p>We promote fitness, teamwork, and resilience through structured sports and safe, modern
+                        infrastructure.</p>
+                    <div class="feature-grid">
+                        <div class="feature">
+                            <strong>Outdoor</strong>
+                            <p>Football field, Athletics track, Throwball, Kho-Kho practice, Yoga lawn.</p>
+                        </div>
+                        <div class="feature">
+                            <strong>Indoor</strong>
+                            <p>Table Tennis, Chess, Carrom, Fitness room, Multipurpose hall.</p>
+                        </div>
+                        <div class="feature">
+                            <strong>Campus</strong>
+                            <p>Smart classrooms, Science labs, Computer lab, Library, CCTV, GPS Transport.</p>
+                        </div>
+                    </div>
+                </div>
+                <aside class="badge-board card">
+                    <h3>House System</h3>
+                    <ul class="house-list">
+                        <li><span class="house-chip house-red"></span> Ruby House</li>
+                        <li><span class="house-chip house-blue"></span> Sapphire House</li>
+                        <li><span class="house-chip house-green"></span> Emerald House</li>
+                        <li><span class="house-chip house-gold"></span> Topaz House</li>
+                    </ul>
+                    <p class="muted">Inter-house events: Athletics Meet, Cultural Fest, Literacy Week, Science Expo,
+                        Sports Day.</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Student Support -->
+        <section class="life-support">
+            <div class="container card-grid-3">
+                <article class="card">
+                    <h3>Mentor Care</h3>
+                    <p>Advisory groups, individual goal-setting, continuous feedback, parent connects.</p>
+                </article>
+                <article class="card">
+                    <h3>Health & Safety</h3>
+                    <p>Infirmary, first-aid trained staff, fire & evacuation drills, child protection policy.</p>
+                </article>
+                <article class="card">
+                    <h3>Cafeteria & Transport</h3>
+                    <p>Clean dining, nutritious options; GPS-enabled buses, supervised boarding & dispersal.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Achievements & Expo teaser (text-only; photos in Gallery page) -->
+        <section class="life-highlights">
+            <div class="container">
+                <h2>Achievements & Expo</h2>
+                <div class="card-grid-3">
+                    <article class="card">
+                        <h4>Academic Achievements</h4>
+                        <p>Olympiad ranks, inter-school debate & spell bee winners, subject proficiency awards.</p>
+                    </article>
+                    <article class="card">
+                        <h4>Sports Highlights</h4>
+                        <p>Medals at zonal meets, intra-house championships, yoga and athletics laurels.</p>
+                    </article>
+                    <article class="card">
+                        <h4>Science Expo</h4>
+                        <p>Robotics prototypes, sustainability models, coding projects — student-led innovation.</p>
+                    </article>
+                </div>
+                <div class="center" style="margin-top:16px;">
+                    <a href="gallery.html" class="btn btn--primary">See Photos & Videos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Voices -->
+        <section class="life-voices">
+            <div class="container">
+                <h2>Voices from Our Community</h2>
+                <div class="quote-grid">
+                    <blockquote class="quote card">
+                        <p>“Ananda balances academics with values and confidence-building. Our child loves coming to
+                            school.”</p>
+                        <cite>— Parent of Grade 4</cite>
+                    </blockquote>
+                    <blockquote class="quote card">
+                        <p>“Robotics club helped me learn coding by building things. The expo was the best day of the
+                            year!”</p>
+                        <cite>— Student, Grade 7</cite>
+                    </blockquote>
+                    <blockquote class="quote card">
+                        <p>“The mentor system and regular feedback keep learning clear and personal.”</p>
+                        <cite>— Teacher, Middle School</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="life-cta">
+            <div class="container center">
+                <h2>Ready to Experience Ananda?</h2>
+                <p class="kicker">Visit our campus or browse the gallery to see learning in action.</p>
+                <div class="hero-cta">
+                    <a href="gallery.html" class="btn btn--ghost">Browse Gallery</a>
+                    <a href="admissions.html" class="btn btn--primary">Apply Now</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <!-- Column 1: Logo -->
+            <div class="footer-col">
+                <img src="assets/logo/Anadha school Logo.jpg" alt="Ananda Educational Institutions Logo"
+                    class="footer-logo">
+                <p>
+                    Ananda Educational Institutions – nurturing <strong>future-ready learners</strong> through
+                    <em>academic excellence, values, and holistic growth</em>.
+                </p>
+            </div>
+
+            <!-- Column 2: Useful Links -->
+            <div class="footer-col">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Contact -->
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>📍 R.Pattanam, Rasipuram, Tamil Nadu 637 408</p>
+                <p>📞 <a href="tel:+919788478032">+91 97884 78032</a> | <a href="tel:+919629450364">+91 96294 50364</a>
+                </p>
+                <p class="contact-item">
+                    <img src="assets/icons/mail.svg" alt="Email" class="contact-icon"><a href="#">abc@gmail.com</a>
+                </p>
+                <div class="socials">
+                    <a href="https://youtube.com/@anandavidyalayaeducationalinst?si=ozFYVKlZiv9ln0UU"><img
+                            src="assets/icons/youtube.svg" alt="youtube"></a>
+                    <a href="https://www.facebook.com/people/Ananda-Educational-Institutions/61564529486074/#"><img
+                            src="assets/icons/facebook.svg" alt="Facebook"></a>
+                    <a
+                        href="https://www.instagram.com/ananda_institutions?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                            src="assets/icons/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Ananda Educational Institutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
